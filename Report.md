@@ -31,7 +31,7 @@ UPDATE_ITER = 1         # Number of updates per step
 ## Plot of Rewards
 ![RewardPlot](training_plot.png)
 
-
+Environment solved in 880 episodes with an average score of 0.511.
 
 ## Importance of Exploration
 Since there are two agents involved the training process is even more unstable than regular RL. Initially, the agents would not converge regardless of network architecture and extensive hyper-parameter search. I noticed that it is crucial to explore some experiences with a positive reward early on to allow the agents to learn a good policy. Therefore, I spend a lot of time to come up with a good exploration schedule. I extended the exploration methodology that I implemented in the previous project. In order to facilitate a gradual transition from acting in the environment by exploration to acting based on the policy, the exploration probability is determined based on the progress of training: 
@@ -72,7 +72,7 @@ Also, [prioritized experience replay](https://arxiv.org/abs/1511.05952) could he
 
 It would be a nice challenge to solve the more difficult **Soccer** environment.
 
-![Soccer][image2]
+![Soccer](https://user-images.githubusercontent.com/10624937/42135622-e55fb586-7d12-11e8-8a54-3c31da15a90a.gif)
 
 In this environment, the goal is to train a team of agents to play soccer.  
 
